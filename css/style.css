@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+body{
+    position: relative;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-image: url("../img/bg.jpeg");
+    background-size: 50vh 100vh;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.congratulation{
+    z-index: 500;
+    text-shadow: 3px 5px 6px #ab0bb9;
+    font-size: 7.5vw;
+    text-align: center;
+    opacity: 1;
+    transition: 2s ease;
+}
+.congratulation .hb{
+    position: absolute;
+    top: 8vh;
+    right: -8vw;
+    height: 20vh;
+    transform: rotate(8deg);
+}
+
+ul {
+  list-style: none;
+}
+.congratulation .port{
+    position: absolute;
+    bottom: 8vh;
+    left: -1vw;
+    height: 20vh;
+    transform: rotate(-8deg);
+}
+
+.congratulation .mashroom{
+    position: absolute;
+    top: 370vh;
+    left: 6vw;
+    height: 30vh;
+    transform: rotate(-9deg);
+}
+
+.congratulation>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.wish_list ul{
+    list-style-position: inside;
+    text-align: left;
+    font-size: 6vw;
+}
+.wish_list ul li{
+    text-align: left;
+}
+.button{
+    position: absolute;
+    display: flex;
+    top: calc(50vh - var(--bh)/2);
+    left: calc(50vw - var(--bw)/2);
+    width: 80vw;
+    height: 20vw;
+    z-index: 999;
+    background-color: #e92ae9;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 10vw;
+    border-radius: 4vw;
+    animation: shake 2s ease-in-out infinite;
+}
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 85vh;
+    right: 8vw;
+    width: 25vw;
+    height: 8vw;
+    z-index: 999;
+    background-color: #e31af5;
+    text-decoration: none;
+    font-size: 8vw;
+    border-radius: 4vw;
+    animation: shake 2s ease-in-out infinite;
+    opacity: 1;
+    transition: 2s ease;
+    padding-bottom: 1vh;
+}
+.fade{
+    opacity: 0;
+    z-index: 100;
+    transition: .5s ease;
+}
+
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    5%{
+        transform: rotate(3deg);
+    }
+    10%{
+        transform: rotate(-4deg);
+    }
+    15%{
+        transform: rotate(4deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    
+}
